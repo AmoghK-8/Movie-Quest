@@ -1,45 +1,85 @@
-/* General Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color:white;
 }
-
-header {
-  background-color: #4caf50;
-  color: white;
+header
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height:60vh;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+  align-items: center;
+  justify-content: center;
+}
+.box
+{
+   background-image: url(bg.jpg);
+}
+.content
+{
+  color:white;
+  position:relative;
+  z-index: 10;
   text-align: center;
-  padding: 1rem;
 }
-
+.content h1
+{
+  font-size:42px;
+  margin:0px;
+  font-weight:bold;
+}
+.content p
+{
+  font-size:18px;
+  margin-bottom:0px;
+  font-weight:bolder
+}
+.separation
+{
+    height:20px;
+    background-color: rgb(78, 77, 77);
+}
 main {
   padding: 1rem;
+  ;
 }
 
 .search-section {
   text-align: center;
   margin-bottom: 2rem;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-section input {
   padding: 0.5rem;
   font-size: 1rem;
-  width: 60%;
+  width:30%;
+  min-width:180px;
+  border-radius:5px;
+  border:none;
   margin-right: 0.5rem;
 }
 
 .search-section button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #4caf50;
+  border-radius:5px;
+  border:none;
+  background-color: #e01e1e;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .search-section button:hover {
-  background-color: #45a049;
+  background-color: #f75c5c;
 }
 
 .movies {
@@ -50,13 +90,14 @@ main {
 }
 
 .movie-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: rgb(30, 30, 30);
+  border:none;
   border-radius: 8px;
   width: 200px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  color:white;
 }
 
 .movie-card img {
@@ -79,19 +120,19 @@ main {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
-  background-color: #4caf50;
+  background-color:  #e01e1e;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .movie-card button:hover {
-  background-color: #45a049;
+  background-color:#f75c5c;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #4caf50;
+  background-color: black;
   color: white;
 }
